@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junaid Ameer | Junaid Projects | Secure Web Solutions</title>
+    
+    <link rel="icon" type="image/png" href="/junaid ameer.png" />
+
+    <meta name="description" content="Official portfolio of Junaid Ameer (Junaid.Dev). Expert Cyber Security Analyst & Web Developer." />
+    <meta property="og:title" content="Junaid.Dev - Architecting Secure Digital Solutions" />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1A73E8', 
+              primaryDark: '#1557b0',
+              accent: '#00A98F', 
+              accentDark: '#008570',
+              darkbg: '#0F172A', 
+              surface: '#F8FAFC', 
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Outfit', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+            animation: {
+              'orbit': 'orbit 15s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              orbit: {
+                '0%': { transform: 'rotate(0deg) translateX(120px) rotate(0deg)' },
+                '100%': { transform: 'rotate(360deg) translateX(120px) rotate(-360deg)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-15px)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .btn-primary {
+        background: linear-gradient(135deg, #1A73E8 0%, #1557b0 100%);
+        box-shadow: 0 4px 14px 0 rgba(26, 115, 232, 0.39);
+        transition: all 0.2s ease-in-out;
+      }
+      .btn-primary:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 20px rgba(26, 115, 232, 0.23);
+      }
+      /* Clean Input Styles */
+      .input-modern {
+        border: 1px solid #cbd5e1;
+        transition: all 0.2s;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      .input-modern:focus {
+        border-color: #1A73E8;
+        box-shadow: 0 0 0 4px rgba(26, 115, 232, 0.1);
+      }
+      
+      /* ... Rest of your existing styles ... */
+      
+      .glass-nav {
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(16px);
+      }
+      
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #0F172A; }
+      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    </style>
+  </head>
+  <body class="bg-surface text-slate-900 antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
